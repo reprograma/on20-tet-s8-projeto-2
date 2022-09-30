@@ -2,9 +2,10 @@
 
 ## Nome do Projeto
 
-- Explicação do projeto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+- Explicação do projeto: Fazer o fork do projeto e colocar algumas features a mais:
+
+  - colocar a mensagem de erro caso o usuário tente colocar uma tarefa vazia ou com apenas espaços logo embaixo do input ao invés de utilizar o alert.
+  - trocar o texto do botão marcar todos quando todos os elementos estiverem marcados e desmarcar todos os itens também. Se tiver pelo menos um item sem marcar manter o botão como marcar todos e marcar todos ao clicar
 ---
 
 Terminou o projetinho? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

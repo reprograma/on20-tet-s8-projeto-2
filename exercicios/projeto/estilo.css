@@ -43,6 +43,11 @@ li {
   margin-top: 10px;
 }
 
+li.checked {
+  background-color: greenyellow;
+  text-decoration: line-through;
+}
+
 #button-container button {
   border: none;
   cursor: pointer;

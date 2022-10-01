@@ -42,6 +42,7 @@ function cadastrarTarefa(evento) {
   } else {
     let itemDaLista = document.createElement('li');
     itemDaLista.innerText = inputTarefa.value;
+    inputTarefa.value = '';
 
     let botaoDeletar = document.createElement('button');
     itemDaLista.appendChild(botaoDeletar);

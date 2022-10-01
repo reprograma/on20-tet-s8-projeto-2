@@ -37,16 +37,20 @@ function deletarTarefa(evento) {
 function cadastrarTarefa(evento) {
   evento.preventDefault();
 
-  let itemDaLista = document.createElement('li');
-  itemDaLista.innerText = inputTarefa.value;
+  if (inputTarefa.value.trim() === '') {
+    alert("Digite uma tarefa")
+  } else {
+    let itemDaLista = document.createElement('li');
+    itemDaLista.innerText = inputTarefa.value;
 
-  let botaoDeletar = document.createElement('button');
-  itemDaLista.appendChild(botaoDeletar);
-  botaoDeletar.addEventListener('click', deletarTarefa)
+    let botaoDeletar = document.createElement('button');
+    itemDaLista.appendChild(botaoDeletar);
+    botaoDeletar.addEventListener('click', deletarTarefa)
 
-  // elementoPai.appendChild(elementoFilho) -> elementoFilho é o elemento a ser adicionado
-  itemDaLista.addEventListener('click', marcarTarefa)
-  ul.appendChild(itemDaLista);
+    // elementoPai.appendChild(elementoFilho) -> elementoFilho é o elemento a ser adicionado
+    itemDaLista.addEventListener('click', marcarTarefa)
+    ul.appendChild(itemDaLista);
+  }
 }
 
 // FORM -> SUBMIT (clicar no botao do form ou apertar o enter dentro input) -> cadastrarTarefa(evento)

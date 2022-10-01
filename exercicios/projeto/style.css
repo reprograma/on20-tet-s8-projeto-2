@@ -1,0 +1,79 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+padding: 20px;
+box-sizing: border-box;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap:20px;  /*espaçamento*/
+}
+
+form input{
+border: none;
+border-bottom: 1px solid black;
+height: 30px;
+width: 100%;
+}
+
+form button{
+    border: none;
+    background-color: rgb(172, 111, 220);
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#botao-container button {
+border: none;
+font-size: 13pt;
+padding: 10px 20px;
+font-weight: 500;
+cursor: pointer;
+}
+
+#botao-container button:first-child{
+    background-color: rgba(172, 255, 47, 0.803);
+
+}
+#botao-container button:last-child{
+    background-color: rgba(214, 71, 71, 0.781);
+}
+/*largura até pelo menos (min-width) 600px*/
+/*largura até (max-width)*/
+/*maior ou igual, menor e igual*/
+/*min-width é comum usar em mobile first*/
+
+@media (min-width: 600px) {
+    body{
+        background-color: #f8f9fe;
+        display: flex;
+        align-items: center;
+        min-height: 100vh; /*vh = viewport height*/
+        justify-content: center;
+    }
+    main{
+        background-color: white;
+        width: 400px;
+        min-height: 400px;
+        box-shadow: 2px 2px 9px #989595f7;
+    }
+    form{
+        flex-direction: row;
+    }
+    form input{
+        width: 180px;
+    }
+
+}

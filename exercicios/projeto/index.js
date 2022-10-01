@@ -1,8 +1,19 @@
 let inputTarefa = document.querySelector('form input');
 let form = document.querySelector('form');
 let ul = document.getElementById('todo-list-container');
+let botaoMarcarTodos = document.getElementById('marcar-todos')
 // PEGAR O QUE ESTA ESCRITO NO INPUT
 // console.log(inputTarefa.value)
+
+function marcarTodasTarefas() {
+  let itensDaListaDeTarefas = document.querySelectorAll('li');
+  console.log(itensDaListaDeTarefas)
+  itensDaListaDeTarefas.forEach(function (li) {
+    li.classList.add('checked');
+  })
+}
+
+botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
 
 function marcarTarefa(evento) {
   evento.target.classList.toggle('checked');

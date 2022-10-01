@@ -6,72 +6,50 @@
 
 Turma Online 20 - Todas em Tech  | Front-end | Semana 8 | 2022 | Professora Ana Beatriz Morita
 
-### Instruções
+## Instruções
 Antes de começar, vamos organizar nosso setup.
 * Fork esse repositório 
 * Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
 * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
 * [Add outras intrucoes caso necessario]
 
-### Resumo
-O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
+## Projeto To do list
 
-## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
-   
-### Tema3
-1. [Tópico 4](#topico4)
+### Passos
 
-### Tema1 
+- __1.__ HTML
+  - [x] ESTRUTURAR HTML
+- __2.__ CSS
+  - [x] ESTILIZAR O SITE (MOBILE FIRST)
+- __3.__ JavaScript
+  - [x] __3.1__ CADASTRAR TAREFA
+    - [x] __3.1.1__ PEGAR O INPUT E O QUE ESTÁ ESCRITO NELE
+    - [x] __3.1.2__ ADICIONAR O EVENTO DE CADASTRAR A TAREFA
+    - [x] __3.1.3__ PEGAR AS INFORMAÇÕES E ADICIONAR NA TELA
+      - [x] __3.1.3.1__ CRIAR UM ELEMENTO PARA COLOCAR AS INFOS DA TAREFA
+      - [x] __3.1.3.2__ COLOCAR AS INFOS DA TAREFA NO ELEMENTO CRIADO
+      - [x] __3.1.3.3__ COLOCAR ELEMENTO CRIADO NO HTML
+  - [x] __3.2__ MARCAR TAREFA COMO FEITA
+    - [x] __3.2.1__ PINTAR DE VERDE E COLOCAR UM RISQUINHO NO TEXTO (LINE THROUGH)
+  - [x] __3.3__ APAGAR UMA TAREFA
+    - [x] __3.3.1__ CRIAR BOTÃO DE DELETAR TAREFA
+    - [x] __3.3.2__ ADICIONAR BOTÃO AO ITEM DA LISTA
+    - [x] __3.3.3__ ADICIONAR EVENTO AO BOTÃO CRIADO
+    - [x] __3.3.4__ ADICIONAR EVENTO AO BOTÃO CRIADO
+    - [x] __3.3.5__ PEGAR BOTÃO QUE FOI CLICADO E CHAMOU A FUNÇÃO DE DELETAR
+    - [x] __3.3.6__ REMOVER O LI QUE CONTÉM O BOTÃO CLICADO
+  - [x] __3.4__ MARCAR TODAS AS TAREFAS COMO FEITAS
+    - [x] __3.4.1__ PEGAR TODOS ITENS DA LISTA
+    - [x] __3.4.2__ ADICIONAR ESTILO DE CHECKED EM CADA ITEM DA LISTA
+  - [x] __3.5__ APAGAR TODAS AS TAREFAS
+    - [x] __3.5.1__ PEGAR TODOS ITENS DA LISTA
+    - [x] __3.5.2__ REMOVER CADA ITEM DA LISTA
+  - [x] __3.6__ ADICIONAR MENSAGEM DE ERRO CASO O USUÁRIO TENTE ENTRAR COM TAREFA VAZIA
 
-#### Topico1
+### Desafio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
-
- #### Topico2
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - Donec erat mauris, laoreet in tortor vel
-  - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
-
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#Subtopico2)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
-
-***
-### Exercícios 
-* [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
-* [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
-
-### Material da aula 
-
-### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
+  - colocar a mensagem de erro caso o usuário tente colocar uma tarefa vazia ou com apenas espaços logo embaixo do input ao invés de utilizar o alert.
+  - trocar o texto do botão marcar todos quando todos os elementos estiverem marcados e desmarcar todos os itens também. Se tiver pelo menos um item sem marcar manter o botão como marcar todos e marcar todos ao clicar
 
 
 <p align="center">

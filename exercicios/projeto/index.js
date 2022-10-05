@@ -19,7 +19,7 @@ botaoDeletarTodos.addEventListener('click', deletarTodasTarefas);
 function marcarTodasTarefas() {
   let itensDaListaDeTarefas = document.querySelectorAll('li');
   itensDaListaDeTarefas.forEach(function (li) {
-    li.classList.add('checked');
+    li.classList.toggle('checked');
   })
 }
 
@@ -38,7 +38,7 @@ function cadastrarTarefa(evento) {
   evento.preventDefault();
 
   if (inputTarefa.value.trim() === '') {
-    alert("Digite uma tarefa")
+    // alert("Digite uma tarefa")
   } else {
     let itemDaLista = document.createElement('li');
     itemDaLista.innerText = inputTarefa.value;

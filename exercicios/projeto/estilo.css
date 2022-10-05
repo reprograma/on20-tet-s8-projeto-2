@@ -35,6 +35,15 @@ form button{
     padding: 10px 20px;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-top: 10px;
+}
+
 #button-container button{
     border: none;
     cursor: pointer;

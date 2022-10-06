@@ -3,16 +3,24 @@ let input = document.querySelector('input');
 let form = document.querySelector('form');
 let btnForm = document.querySelector('form button');
 let ulLista = document.querySelector('ul');
-let btnMarcarTodas = document.getElementById('btn-marcar-todas')
+let btnMarcarTodas = document.getElementById('btn-marcar-todas');
+let btnDeletarTodas = document.getElementById('btn-deletar-todas')
+
+function deletarTodas() {
+    let todasTarefas = document.querySelectorAll('li');
+    todasTarefas.forEach((itemLi)=>{
+        ulLista.removeChild(itemLi)
+    })
+}
+btnDeletarTodas.addEventListener('click', deletarTodas)
 
 function marcarTodas() {
     let todasTarefas = document.querySelectorAll('li');
-    todasTarefas.forEach(function (itemli) {
+    todasTarefas.forEach( (itemli) => {
         let desmarcarTodas = itemli.classList.toggle('marcado')
         btnMarcarTodas.innerHTML = `${desmarcarTodas ? "Desmarcar todas" : "Marcar todas"}`;
     })
 }
-
 btnMarcarTodas.addEventListener('click',marcarTodas)
 
 function marcarTarefa(e) {

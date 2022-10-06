@@ -8,14 +8,9 @@
   
   main {
     box-sizing: border-box;
-    padding: 20px; 
-    border: solid 1px black;
+    padding: 20px;
   }
   
-  h1{
-    color: #E44C4F;
-    text-align: center;
-  }
   form {
     align-items: flex-start;
     display: flex;
@@ -31,15 +26,12 @@
   }
   
   form button {
-    background-color: rgba(45,253,209,1);
+    background-color: #0d69f6;
     border: none;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: white;
     cursor: pointer;
-    padding: 5px;
-    border-radius: 8px;
-    width: 120px;
-    height: 30px;
+    padding: 10px 20px;
   }
   
   ul {
@@ -51,18 +43,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    background-image: url('./checkbox1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 35px;
   }
   
   li.checked {
     background-color: greenyellow;
     text-decoration: line-through;
-    background-image: url('./checkbox2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
   }
   
   li button {
@@ -76,49 +61,28 @@
   }
   
   #button-container button {
-    margin: 2px;
     border: none;
     cursor: pointer;
-    font-size: 13.4pt;
+    font-size: 14pt;
     padding: 10px 20px;
-    border-radius: 20px;
-    width: 160px;
-    height: 60px;
   }
   
   #button-container button:first-child {
-    background: rgb(35,195,34);background: linear-gradient(225deg, rgba(35,195,34,1) 0%, rgba(45,253,209,1) 100%);
+    background-color: rgba(172, 255, 47, 0.803);
   }
   
   #button-container button:last-child {
-    background: rgb(253,45,143);
-    background: linear-gradient(225deg, rgba(253,45,143,1) 0%, rgba(228,76,79,1) 100%);
+    background-color: rgba(255, 33, 33, 0.781);
   }
- p{
-    color: red;
-    text-align: center;
-  }
-  @media (min-width: 240px) {
-    main {
-      margin-top: 40px;
-      border: none;
-    
-    }
-    #pencil-pin{
-      margin-left: 100px;
-    }
-  }
+  
   @media (min-width: 600px) {
     body {
       align-items: center;
-      
+      background-color: #f8f9fe;
       display: flex;
       justify-content: center;
       min-height: 100vh;
       /* vh - viewport height */
-
-        background: rgb(35,195,34);background: linear-gradient(225deg, rgba(35,195,34,1) 0%, rgba(45,253,209,1) 100%);
-      
     }
   
     main {
@@ -126,7 +90,6 @@
       box-shadow: 2px 2px 9px #989595f7;
       min-height: 400px;
       width: 400px;
-      margin: 40px;
     }
   
     form {
@@ -135,9 +98,5 @@
   
     form input {
       width: 180px;
-    }
-    #pencil-pin{
-      margin-top: -80px;
-      margin-left: 150px;
     }
   }

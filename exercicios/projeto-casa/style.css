@@ -114,10 +114,12 @@ input{
 }
 
 li {
+    list-style-type: upper-roman;
     display: flex;
     justify-content: space-between;
-    text-decoration: dotted;
-    font-size: 17px;
+    text-decoration: underline;
+    font-size: 17px; 
+
 }
 
   

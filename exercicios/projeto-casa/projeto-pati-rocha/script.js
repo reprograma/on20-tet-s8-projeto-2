@@ -3,7 +3,17 @@ let input = document.querySelector('input');
 let form = document.querySelector('form');
 let btnForm = document.querySelector('form button');
 let ulLista = document.querySelector('ul');
+let btnMarcarTodas = document.getElementById('btn-marcar-todas')
 
+function marcarTodas() {
+    let todasTarefas = document.querySelectorAll('li');
+    todasTarefas.forEach(function (itemli) {
+        let desmarcarTodas = itemli.classList.toggle('marcado')
+        btnMarcarTodas.innerHTML = `${desmarcarTodas ? "Desmarcar todas" : "Marcar todas"}`;
+    })
+}
+
+btnMarcarTodas.addEventListener('click',marcarTodas)
 
 function marcarTarefa(e) {
     //e.target é o elemento que recebeu o evento

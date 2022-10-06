@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="./index.js"></script>
+    <script defer src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Itim&display=swap" rel="stylesheet">
@@ -24,16 +24,18 @@
         </div>
         <form action="">
             <input type="text" id="input-space">
-            <button>Cadastre</button>
+            <button id="button-add">Envia</button>
         </form>
+        <p id="lugar-do-erro"></p>
+        <div id="lista"></div>
     <ul id="todo-list-container">
     <div id="button-container">
-        <button id="button-select">Selecionar todas</button>
+        <button id="button-select" onclick="marcarTodasTarefas()">MARCAR</button>
         <button id="button-clean">Limpar</button>
     </div></ul>
     <footer id="footer">
-        <p>Feito com <s>ódio</s> carinho pela <a href="http://www.github.com/mariprs">Mariprs</a></p>
-        <img src="./img/yayy.png" alt="Bonequinho comemorando" id="img-footer">
+        <h3>Feito com <s>ódio</s> carinho pela <a target="_blank" href="http://www.github.com/mariprs">Mariprs</a>
+        <img src="./img/yayy.png" alt="Bonequinho comemorando" id="img-footer"></h3>
     </footer>
 </main>
 </body>

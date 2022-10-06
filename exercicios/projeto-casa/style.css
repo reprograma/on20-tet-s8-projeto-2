@@ -20,22 +20,30 @@ button {
     background-color: #fff1df;
     border-radius: 20px;
     border-style: dotted;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 73%;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 #button-add{
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #button-container{
     padding-right: 5%;
 }
 
+#button-clean{
+    size: 15px;
+    padding-right: 5%;
+
+}
+
 #button-select{
-    margin-right: 20px;
+    margin-left: 10px;
+    width: 95px;
 }
 
 div {
@@ -52,11 +60,11 @@ div {
     border-radius: 10px;
 }
 
-#footer {
-    display: flex;
+footer {
     align-items: center;
     justify-content: center;
     font-size: 70%;
+    display: flex;
 }
 
 form{
@@ -64,22 +72,30 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 h1{
     text-align: center;
 }
 
+h3{
+    margin-left: 15px;
+}
+
+
 #img-footer{
-    display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
     max-width: 19%;
+    padding-top: 10%;
+    padding-left: 10%;
 }
 
 #imagem-titulo{
-    min-width: 10%;
+    max-width: 2rem;
+    background-size: contain;
     max-height: auto;
     display: flex;
 }
@@ -93,8 +109,34 @@ input{
 }
 
 #input-space{
-    width: 50%;
+    width: 60%;
+    margin-left: 10px;
 }
+
+li {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: dotted;
+    font-size: 17px;
+}
+
+  
+  li.checked {
+    text-decoration: line-through;
+    background-color: #9d8957;
+
+  }
+  
+  li button {
+    background-color: transparent;
+    background-image: url('./img/lixinho.png');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
 
 main {
     background-color: #fff1df;
@@ -102,6 +144,12 @@ main {
     animation: backInLeft; 
     animation-duration: 2s;
     
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #titulo {
@@ -118,9 +166,14 @@ main {
 
 ul {
     padding-top: 20px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: -21px;
+    margin-inline-end: 0px;
     justify-content: center;
+    flex-direction: column-reverse;
+    gap: 20px;
 }
 
 @media (min-width: 600px){
@@ -142,7 +195,8 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 70%;
+        font-size: 0.7rem;
+        gap: 2px;
     }
 
 }

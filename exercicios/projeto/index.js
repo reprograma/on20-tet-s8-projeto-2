@@ -1,7 +1,18 @@
 let inputTafera = document.querySelector('form input');
 let form = document.querySelector('form')
 let ul = document.getElementById('cadastrar-list')
-botaoMarcarTodos = document.getElementById('marcar-todos')
+let botaoMarcarTodos = document.getElementById('marcar-todos')
+let botaoDeDeletarTodos = document.getElementById('deletar-todos')
+
+botaoDeDeletarTodos.addEventListener('click', deletarTodasTarefas)
+
+function deletarTodasTarefas(){
+    let itensDaListaDeTarefas = document.querySelectorAll('li')
+    itensDaListaDeTarefas.forEach(function (li) {
+        ul.removeChild(li)
+    } )
+}
+
 
 function marcarTodasTarefas(){
     let itensDaListaDeTarefas = document.querySelectorAll('li')

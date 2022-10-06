@@ -15,12 +15,28 @@ function deletarTodasTarefas() {
 }
 
 botaoDeletarTodos.addEventListener('click', deletarTodasTarefas);
-
+//Resolução da parte do exercicio de colocar função para desmarcar todas
 function marcarTodasTarefas() {
-  let itensDaListaDeTarefas = document.querySelectorAll('li');
-  itensDaListaDeTarefas.forEach(function (li) {
-    li.classList.add('checked');
-  })
+    let itensDaListaDeTarefas = document.querySelectorAll('li');
+    
+// 3 Passo: Ao clicar no botão, checa se ta com o texto Marcar todas. 
+//Se tiver, adiciona a classe checked pra todas e muda o nome para Desmarcar todas
+    if (botaoMarcarTodos.innerText === "Marcar todas") {
+        itensDaListaDeTarefas.forEach(function (li) {
+        li.classList.add('checked');
+})
+  
+// Muda nome do botão para desmarcar todas
+    botaoMarcarTodos.innerText = "Desmarcar todas"
+  
+// 4 Passo: Ao clicar no botão, Checa se o botao ta Desmarcar todas. Se tiver, tira a classe checked pra todas e muda o nome para Marcar todas
+    } else {
+    itensDaListaDeTarefas.forEach(function (li) {
+        li.classList.remove('checked');
+    })
+  
+    botaoMarcarTodos.innerText = "Marcar todas"
+}
 }
 
 botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
@@ -33,7 +49,7 @@ function deletarTarefa(evento) {
   // elementoPai.removeChild(filho) ->  filho é o elemento a ser apagado
   ul.removeChild(evento.target.parentElement);
 }
-
+//Resolução da mensagem de erro, caso a tarefa seja vazia
 function cadastrarTarefa(evento) {
   evento.preventDefault();
 // Se o valor digitado for vazio, pega elemendo pelo id e coloca display block para aparecer o texto //

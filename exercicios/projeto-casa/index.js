@@ -18,7 +18,6 @@ function deletarTodasTarefas() {
 botaoDeletarTodos.addEventListener('click', deletarTodasTarefas);
 
 
-
 function marcarTodasTarefas() {
   let itensDaListaDeTarefas = document.querySelectorAll('li')
   

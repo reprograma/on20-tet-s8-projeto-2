@@ -3,6 +3,7 @@ let form = document.querySelector('form')
 let ul = document.getElementById('cadastrar-list')
 let botaoMarcarTodos = document.getElementById('marcar-todos')
 let botaoDeDeletarTodos = document.getElementById('deletar-todos')
+let mensagemErro = document.getElementById('mensagem-erro')
 
 botaoDeDeletarTodos.addEventListener('click', deletarTodasTarefas)
 
@@ -42,17 +43,25 @@ function deletarTarefa(evento) {
 
 function cadastarTarefa(evento) {
     evento.preventDefault()
+    
+    if (inputTafera.value === '') {
+        mensagemErro.style.display = 'block'
+    } else {
+        mensagemErro.style.display = 'none'
+        let li = document.createElement('li') 
+        li.innerText = inputTafera.value 
+     
+        let botaoDeletar = document.createElement('button')
+        li.appendChild(botaoDeletar)
+        botaoDeletar.addEventListener('click', deletarTarefa)
+     
+        li.addEventListener('click', marcarTarefa)
+        ul.appendChild(li)
+        
+    }
 
 
-   let li = document.createElement('li') 
-   li.innerText = inputTafera.value 
 
-   let = botaoDeletar = document.createElement('button')
-   li.appendChild(botaoDeletar)
-   botaoDeletar.addEventListener('click', deletarTarefa)
-
-   li.addEventListener('click', marcarTarefa)
-   ul.appendChild(li)
 }
 
-form.addEventListener('submit', cadastarTarefa);
+form.addEventListener('submit',cadastarTarefa );

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,17 @@
     <script defer src="./index.js"></script>
     <title>TODO LIST</title>
 </head>
+
 <body>
     <main>
         <h1>Todo list</h1>
         <form action="">
-            <input type="text">
+            <div>
+                <input type="text">
+                <p id="mensagem-erro" class="mensagem-erro">Nem uma atividade registrada</p>
+            </div>
             <button>Cadastrar tarefa</button>
+
         </form>
         <ul id="cadastrar-list"></ul>
         <div id="button-container">
@@ -22,4 +28,5 @@
         </div>
     </main>
 </body>
+
 </html>

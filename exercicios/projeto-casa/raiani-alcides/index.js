@@ -57,6 +57,10 @@ function cadastarTarefa(evento) {
      
         li.addEventListener('click', marcarTarefa)
         ul.appendChild(li)
+
+        inputTafera.value = ''
+        inputTafera.focus()
+
         
     }
 

@@ -1,14 +1,39 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  
 }
+
+
 
 body {
   margin: 0;
+  animation:changeBackgroundColor 8s infinite;
+  
+  
+}
+
+ span{
+  
+  font-size: 15px;
+}
+h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 30px;
+  color: rgb(129, 44, 44);
+
 }
 
 main {
-  box-sizing: border-box;
+  border-radius: 0.9em;
+  background-image: url(./Design\ sem\ nome\ \(2\).png);
+  height: 35px;
+  
+  box-sizing: border-box; 
   padding: 20px;
+  
+  
 }
 
 form {
@@ -18,20 +43,42 @@ form {
   gap: 20px;
 }
 
+p{
+  
+  margin-left: 3em;
+  font-size: 0.7em;
+  color: rgb(189, 27, 9);
+  
+}
+
 form input {
+  
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1em solid rgb(227, 186, 223);
   height: 30px;
   width: 100%;
 }
 
 form button {
-  background-color: #0d69f6;
-  border: none;
+  border-style: none;
+  border-radius: 0.3em;
   box-sizing: border-box;
-  color: white;
+  background-color: #ff36bc;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 10px 20px;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #001F3F;
+  }
+  50% {
+    background-color: #ff36bc;
+  }
+  100% {
+    background-color: #001F3F;
+  }
 }
 
 ul {
@@ -46,6 +93,7 @@ li {
 }
 
 li.checked {
+  
   background-color: greenyellow;
   text-decoration: line-through;
 }
@@ -63,15 +111,20 @@ li button {
 #button-container button {
   border: none;
   cursor: pointer;
-  font-size: 14pt;
+  font-size: 10pt;
   padding: 10px 20px;
+  color: #f8f9fe;
 }
 
 #button-container button:first-child {
-  background-color: rgba(172, 255, 47, 0.803);
+  border-style: none;
+  border-radius: 0.3em;
+  background-color: rgba(0, 103, 82, 0.803);
 }
 
 #button-container button:last-child {
+  border-style: none;
+  border-radius: 0.3em;
   background-color: rgba(255, 33, 33, 0.781);
 }
 
@@ -86,6 +139,7 @@ li button {
   }
 
   main {
+    
     background-color: white;
     box-shadow: 2px 2px 9px #989595f7;
     min-height: 400px;

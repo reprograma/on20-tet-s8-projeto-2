@@ -3,6 +3,7 @@ let form = document.querySelector('form');
 let ul = document.getElementById('todo-list-container')
 let botaoMarcarTodos = document.getElementById ('button-check-all');
 let marcouTodos = false
+let botaoLimpar = document.getElementById ('button-clean')
 
 function marcarTodastarefas() {
     let itensDaListaDeTarefas = document.querySelectorAll('li');
@@ -16,6 +17,7 @@ function marcarTodastarefas() {
             li.classList.remove('checked');
         })
         marcouTodos = false
+
     }
 }
 
@@ -29,11 +31,6 @@ function deletarTarefa (evento) {
 
 function cadastrarTarefa(evento) {
     evento.preventDefault();
-
-    if (inputTarefa.value == ('')) {
-        alert ('Tarefa vazia, Digite');
-        return
-    }
     
     let itemDaLista = document.createElement('li');
     itemDaLista.innerText = inputTarefa.value;
@@ -46,7 +43,11 @@ function cadastrarTarefa(evento) {
     ul.appendChild(itemDaLista);
     
 }
+    function limparTarefas () {
+        inputTarefa.value = ''
+    }
 
 botaoMarcarTodos.addEventListener('click', marcarTodastarefas);
+botaoLimpar.addEventListener('click',limparTarefas);
 
 form.addEventListener('submit', cadastrarTarefa);

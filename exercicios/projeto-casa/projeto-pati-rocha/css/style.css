@@ -41,6 +41,10 @@ ul {
 ul li {
  margin-top: 10px;
 }
+li.marcado {
+    background-color: #adff2f;
+    text-decoration: line-through;
+}
 #button-container button {
     border: none;
     cursor: pointer;

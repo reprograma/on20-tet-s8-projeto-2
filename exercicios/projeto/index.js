@@ -1,6 +1,16 @@
 let inputTafera = document.querySelector('form input');
 let form = document.querySelector('form')
 let ul = document.getElementById('cadastrar-list')
+botaoMarcarTodos = document.getElementById('marcar-todos')
+
+function marcarTodasTarefas(){
+    let itensDaListaDeTarefas = document.querySelectorAll('li')
+    itensDaListaDeTarefas.forEach(function (li) {
+        li.classList.toggle('check')
+    } )
+}
+
+botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
 
 function marcarTarefa(evento) {
    evento.target.classList.toggle('check')

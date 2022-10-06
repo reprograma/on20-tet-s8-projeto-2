@@ -1,0 +1,133 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-attachment: fixed;
+    
+  }
+  
+  main {
+    box-sizing: 50px 60px;
+    padding: 30px 30px ;
+    
+  }
+  
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 40px 10px;
+  }
+  
+  form button {
+    background-color: #325d79f5;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-color: rgb(73, 73, 73);
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    
+  }
+  
+
+container-b{
+ position: relative;
+  padding: 5px;
+  font-size: 12px;
+  color: black;
+}
+
+.hide{
+  display: none;
+}
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  li.checked {
+    background-color:  rgba(27, 92, 97, 0.521);
+    text-decoration: line-through;
+    border-radius: 5px;
+  }
+  
+  li button {
+    background-color: transparent;
+    background-image: url('./trash.png');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+  
+  #button-container button {
+    border-color: rgb(73, 73, 73);
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-radius:  10px;
+    font-size: 10pt;
+    padding: 5px 20px;
+    color: antiquewhite;
+  }
+  
+  #button-container button:first-child {
+    background-color: rgba(27, 92, 97, 0.521);
+    }
+  
+  #button-container button:last-child {
+    background-color: rgba(240, 76, 0, 0.651);
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      align-items: center;
+      color:rgb(240, 248, 255);
+      background-repeat:round;
+      background-image:  url(https://i.pinimg.com/564x/85/7e/7f/857e7fc5b47a6b95d291c49ad39f6910.jpg);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+ 
+      /* vh - viewport height */
+    }
+  
+    main {
+      background-color: rgb(240, 158, 111);
+      box-shadow: 2px 2px 9px #989595f7;
+      border-radius: 10%;
+      min-height: 400px;
+      width: 400px;
+    }
+  
+    form {
+      flex-direction: row;
+    }
+  
+    form input {
+      width: 180px;
+    }
+ 
+  
+  }

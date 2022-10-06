@@ -1,0 +1,78 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  main {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form input {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #0af751;
+    border: none;
+    box-sizing: border-box;
+    color: rgba(000000);
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  #button-container button {
+    border: none;
+    cursor: pointer;
+    font-size: 14pt;
+    padding: 10px 20px;
+  }
+  
+  #button-container button:first-child {
+    background-color: rgba(233, 40, 15, 0.803);
+  }
+  
+  #button-container button:last-child {
+    background-color: rgba(79, 17, 226, 0.781);
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      align-items: center;
+      background-color: #040714;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      /* vh - viewport height */
+    }
+  
+    main {
+      background-color: white;
+      box-shadow: 2px 2px 9px #999595f7;
+      min-height: 400px;
+      width: 400px;
+    }
+  
+    form {
+      flex-direction: row;
+    }
+  
+    form input {
+      width: 180px;
+    }
+  }
+  Footer
+  © 2022 GitHub, Inc.

@@ -4,7 +4,7 @@ let ul = document.getElementById('todo-list-container');
 let botaoMarcarTodos = document.getElementById('marcar-todos')
 let botaoDeletarTodos = document.getElementById('deletar-todos');
 let paragrafoAlert = document.createElement('p');
-let botaodesmarcar = document.getElementById('marcar-todos')
+let botaoDesmarcar = document.getElementById('marcar-todos')
 // PEGAR O QUE ESTA ESCRITO NO INPUT
 // console.log(inputTarefa.value)
 
@@ -21,22 +21,26 @@ botaoDeletarTodos.addEventListener('click', deletarTodasTarefas);
 function marcarTodasTarefas() {
   let itensDaListaDeTarefas = document.querySelectorAll('li');
   itensDaListaDeTarefas.forEach(function (li) {
-    li.classList.add('checked');
+    if (li.classList.contains('checked')) {
+      li.classList.remove('checked')
+    } else {
+      li.classList.add('checked')
+    }
   })
-}
 
+}
 botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
 
 
-function desmarcarTodasTarefas() {
-  let itensDaListaDeTarefas = document.querySelectorAll('li')
-  itensDaListaDeTarefas.forEach(function (li) {
+// function desmarcarTodasTarefas() {
+//   let itensDaListaDeTarefas = document.querySelectorAll('li')
+//   itensDaListaDeTarefas.forEach(function (li) {
     
-      li.classList.remove('checked');
-  })
+//       li.classList.remove('checked');
+//   })
+// }
     
-  
- botaodesmarcar.addEventListener('click', desmarcarTodasTarefas)
+// botaoDesmarcar.addEventListener('click', desmarcarTodasTarefas)
 
 
 
@@ -79,4 +83,3 @@ function cadastrarTarefa(evento) {
 // FORM -> SUBMIT (clicar no botao do form ou apertar o enter dentro input) -> cadastrarTarefa(evento)
 form.addEventListener('submit', cadastrarTarefa);
   
-}

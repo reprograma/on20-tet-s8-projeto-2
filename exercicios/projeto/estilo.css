@@ -41,11 +41,14 @@ ul{
 }
 
 li{
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
 li.check{
     background-color: greenyellow;
+    text-decoration: line-through;
 }
 
 li button{

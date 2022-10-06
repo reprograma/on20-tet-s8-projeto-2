@@ -4,7 +4,8 @@ let form = document.querySelector('form');
 let btnForm = document.querySelector('form button');
 let ulLista = document.querySelector('ul');
 let btnMarcarTodas = document.getElementById('btn-marcar-todas');
-let btnDeletarTodas = document.getElementById('btn-deletar-todas')
+let btnDeletarTodas = document.getElementById('btn-deletar-todas');
+let msgErro = document.createElement('p');   
 
 function deletarTodas() {
     let todasTarefas = document.querySelectorAll('li');
@@ -33,21 +34,25 @@ function deletarTarefa(e) {
 
 function adicionarTarefa(e) {
     e.preventDefault();
-
-    let itemDaLista = document.createElement('li');
-    itemDaLista.innerHTML = input.value;
-    ulLista.appendChild(itemDaLista);
-    itemDaLista.addEventListener('click', marcarTarefa)
     
-    let btnDeletarTarefa = document.createElement('button');
-    itemDaLista.appendChild(btnDeletarTarefa);
-    btnDeletarTarefa.addEventListener('click', deletarTarefa)
-
-    
-    
-    
-
-
+    if(input.value.trim() ==='') {
+        let main = document.querySelector('main');
+        main.insertBefore(msgErro,ulLista)
+        msgErro.innerHTML = '* Texto inválido!'
+    } else {
+        
+        msgErro.innerHTML = '';
+        
+        let itemDaLista = document.createElement('li');
+        itemDaLista.innerHTML = input.value;
+        input.value = ''
+        ulLista.appendChild(itemDaLista);
+        itemDaLista.addEventListener('click', marcarTarefa)
+        
+        let btnDeletarTarefa = document.createElement('button');
+        itemDaLista.appendChild(btnDeletarTarefa);
+        btnDeletarTarefa.addEventListener('click', deletarTarefa)        
+    }
 }
 form.addEventListener('submit', adicionarTarefa);
 

@@ -37,6 +37,9 @@ form input {
     height: 40px;
     width: 50px;
 }
+main p {
+    color: #ff0000;
+}
 ul {
     list-style: none;
     padding: 0;      

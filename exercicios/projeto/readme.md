@@ -19,6 +19,14 @@ function nomeAtividade :
    - colocar as infos da tarefa no elemento criado 
    - colocar elemento criado no HTML
  - marcar tarefa feita 
- - apagar uma tarefa 
+    - pintar de verde e com risco 
+    - style ou classlist (classlist)
+ - apagar uma tarefa (ok)
+   - Adcionar um clique no botao de deletar 
+   - pegar o botao que foi clicado para apagar 
+   - remover um item do html 
  - marcar todas as tarefas como feitas
  - apagar todas as tarefas 
+
+
+ funcao PaiNossoQueEstaNoCeu (evento) {alert tenha misericórdia e aumente meu QI }

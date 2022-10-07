@@ -1,15 +1,40 @@
 * {
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Alkalami', serif;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'PT Serif', serif;
 }
 
 body {
     margin: 0;
+
 }
 
 main {
     box-sizing: border-box;
     padding: 20px;
+    /* border: 5px solid black; */
+    /* width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise); */
+    background-color: transparent;
+    background-image: url('./img/Screenshot_1.png');
+
 }
+
+h1 {
+    /* color: black; */
+
+    background: -webkit-linear-gradient(left, #ff1053 0%, purple 100%);
+    background: linear-gradient(to right #ff1053 0%, purple 100%);
+
+    /* background-image: url(./img/Screenshot_2.png);
+    background-size: contain ; */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
 
 form {
     align-items: flex-start;
@@ -18,48 +43,65 @@ form {
     gap: 20px;
 }
 
+img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    margin-left: 23px;
+}
+
 form input {
     border: none;
     border-bottom: 1px solid black;
     height: 30px;
     width: 100%;
+    border-radius: 10px;
 }
 
-form button {
-    background-color: #0d69f6;
+#btnEnviar {
+    background: rgb(250, 115, 201);
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    box-shadow: 5px #eee;
+    text-shadow: none;
+    /* background-color: #0d69f6;
     border: none;
     box-sizing: border-box;
     color: white;
     cursor: pointer;
-    padding: 10px 20px;
-    
+    padding: 5px;
+    border-radius: 10px 20px */
 }
 
 ul {
     padding: 0;
-    list-style: none;   
+    list-style: none;
 }
 
 li {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-         /*aumentar espaço entre a lista*/
+    color: rgb(165, 68, 84);
+    /*aumentar espaço entre a lista*/
 }
 
 li.checked {
-    background: greenyellow;
+    background: white;
     text-decoration: line-through;
+    border-radius: 5px;
+    
 }
 
 li button {
     background-color: transparent;
-    background-image: url('./trash.png');
+    background-image: url('./img/7.png');
     background-size: contain;
     border: none;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 }
 
 #button-container button {
@@ -70,11 +112,41 @@ li button {
 }
 
 #button-container button:first-child {
-    background-color: rgba(172, 255, 47, 0.803);
+    background-color:rgb(197, 81, 197);
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 #button-container button:last-child {
-    background-color: rgba(255, 33, 33, 0.781);
+    /* background-color: rgba(255, 33, 33, 0.781);
+    border-radius: 10px 20px */
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(140, 72, 235);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 @media (min-width: 600px) {
@@ -83,13 +155,14 @@ li button {
         background-color: #f8f9fe;
         display: flex;
         justify-content: center;
-        min-width: 100vh; /* vh - viewport height */
+        min-width: 100vh;
+        /* vh - viewport height */
     }
 
     main {
         background-color: white;
         box-shadow: 2px 2px 9px #989595f7;
-        min-height: 400pxx;
+        min-height: 400px;
         width: 400px;
 
     }

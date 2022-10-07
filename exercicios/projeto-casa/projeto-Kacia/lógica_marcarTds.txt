@@ -1,0 +1,9 @@
+2ª Questão:
+
+trocar o texto do botão marcar todos quando todos os elementos estiverem marcados e desmarcar todos os itens também.
+ Se tiver pelo menos um item sem marcar manter o botão como marcar todos e marcar todos ao clicar
+
+
+ Pensei na lógica, mas não sei colocar na prática:
+
+ onde seria criar duas 

@@ -3,13 +3,11 @@ let form = document.querySelector('form');
 let ul = document.getElementById('todo-list-container');
 let botaoMarcarTodos = document.getElementById('marcar-todos')
 let botaoDeletarTodos = document.getElementById('deletar-todos');
-// PEGAR O QUE ESTA ESCRITO NO INPUT
-// console.log(inputTarefa.value)
 
-function deletarTodasTarefas() {
+function marcarTodasTarefas() {
   let itensDaListaDeTarefas = document.querySelectorAll('li');
   itensDaListaDeTarefas.forEach(function (li) {
-    // pai.removeChild(filho)
+
     ul.removeChild(li);
   });
 }
@@ -23,14 +21,15 @@ function marcarTodasTarefas() {
   })
 }
 
-botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
+botaoMarcarTodos.innerText="Desmarcar todas"
+}
 
 function marcarTarefa(evento) {
   evento.target.classList.toggle('checked');
 }
 
 function deletarTarefa(evento) {
-  // elementoPai.removeChild(filho) ->  filho é o elemento a ser apagado
+
   ul.removeChild(evento.target.parentElement);
 }
 
@@ -38,13 +37,8 @@ function cadastrarTarefa(evento) {
   evento.preventDefault();
 
   if (inputTarefa.value.trim() === '') {
-
-    let erroMessage = document.createElement('p');
-    ul.appendChild(erroMessage);
-    erroMessage.innerText = "Por favor digite uma tarefa";
-  
+    alert("Digite uma tarefa")
   } else {
-
     let itemDaLista = document.createElement('li');
     itemDaLista.innerText = inputTarefa.value;
     inputTarefa.value = '';
@@ -53,8 +47,12 @@ function cadastrarTarefa(evento) {
     itemDaLista.appendChild(botaoDeletar);
     botaoDeletar.addEventListener('click', deletarTarefa)
 
-    // elementoPai.appendChild(elementoFilho) -> elementoFilho é o elemento a ser adicionado
     itemDaLista.addEventListener('click', marcarTarefa)
     ul.appendChild(itemDaLista);
   }
 }
+
+
+form.addEventListener('submit', cadastrarTarefa);
+
+form.addEventListener('submit', cadastrarTarefa);

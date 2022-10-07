@@ -1,102 +1,123 @@
-* {
-  font-family: 'Montserrat', sans-serif;
+
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  margin: 0;
+body{
+    
+    margin: 0;
 }
 
-main {
-  box-sizing: border-box;
-  padding: 20px;
+main{
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-form {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+form{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-form input {
-  border: none;
-  border-bottom: 1px solid black;
-  height: 30px;
-  width: 100%;
+form input{
+    border: none;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
 }
+
 
 form button {
-  background-color: #0d69f6;
-  border: none;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  padding: 10px 20px;
+    background-color:#823772 ;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+ul{
+    list-style: none;
+    padding: 0;
 }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-li.checked {
-  background-color: greenyellow;
-  text-decoration: line-through;
+li.checked{
+    background-color:#124962d0 ;
+    text-decoration: line-through;
+    border-radius: 10px;
 }
 
-li button {
-  background-color: transparent;
-  background-image: url('./trash.png');
-  background-size: contain;
-  border: none;
-  cursor: pointer;
-  height: 25px;
-  width: 25px;
+p{
+    color: red;
 }
+
+li button{
+    background-color: transparent;
+    background-image: url('./cesto-de-lixo.png');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
 
 #button-container button {
-  border: none;
-  cursor: pointer;
-  font-size: 14pt;
-  padding: 10px 20px;
+    border: none;
+    font: 14pt;
+    padding: 10px 20px;
+
 }
 
 #button-container button:first-child {
-  background-color: rgba(172, 255, 47, 0.803);
+    background-color:#961d43 ;
+    border-radius: 20px;
+    color: white;
 }
 
 #button-container button:last-child {
-  background-color: rgba(255, 33, 33, 0.781);
+    background-color: #f88d87  ;
+    border-radius: 20px;
+    color:white;
+    
+    
+    
+    
 }
 
 @media (min-width: 600px) {
-  body {
-    align-items: center;
-    background-color: #f8f9fe;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    /* vh - viewport height */
-  }
+    body {
+        align-items: center;
+        background-color: #f8f9fe;
+        display: flex;
+        justify-content: center;
+        min-width: 100vh; 
+    }
 
-  main {
-    background-color: white;
-    box-shadow: 2px 2px 9px #989595f7;
-    min-height: 400px;
-    width: 400px;
-  }
+    main {
+        background-color: bisque;
+        box-shadow: 2px 2px 9px #9f7171f7;
+        min-height: 400px;
+        width: 400px;
 
-  form {
-    flex-direction: row;
-  }
+    }
 
-  form input {
-    width: 180px;
-  }
-}
+    form {
+        flex-direction: row;
+    }
+
+    form input {
+        width: 180px;
+    }
+    }
+

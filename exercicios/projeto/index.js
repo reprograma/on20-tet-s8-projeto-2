@@ -11,15 +11,22 @@ function marcarTodastarefas() {
         itensDaListaDeTarefas.forEach (function (li) {
             li.classList.add('checked');
         })
+
+        botaoMarcarTodos.innerHTML = "Desmarcar"
+
         marcouTodos = true
+
     } else {
         itensDaListaDeTarefas.forEach (function (li) {
             li.classList.remove('checked');
         })
-        marcouTodos = false
+        
+        botaoMarcarTodos.innerHTML = "Marcar Todos"
 
+        marcouTodos = false
     }
 }
+
 
 function marcarTarefa(evento) {
     evento.target.classList.add('checked');

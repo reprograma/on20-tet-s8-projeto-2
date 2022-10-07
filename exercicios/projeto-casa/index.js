@@ -1,7 +1,7 @@
 let inputTarefa = document.querySelector('form input');
 let form = document.querySelector('form');
 let ul = document.getElementById('todo-list-container');
-let botaoMarcarTodos = document.getElementById('marcar-todos')
+let botaoMarcarEDesmarcarTodos = document.getElementById('marcar-e-desmarcar-todos')
 let botaoDeletarTodos = document.getElementById('deletar-todos');
 let paragrafoAlert = document.createElement('p');
 // PEGAR O QUE ESTA ESCRITO NO INPUT
@@ -19,33 +19,28 @@ botaoDeletarTodos.addEventListener('click', deletarTodasTarefas);
 
 
 
-function marcarTodasTarefas() {
+function marcarEDesmarcarTodasTarefas() {
   let itensDaListaDeTarefas = document.querySelectorAll('li')
-  
+
   //criar a variavel para armadezenar os itens da lista que estão marcados
   let itensDaListaDeTarefasSelecionados =
     document.querySelectorAll('li.checked')
 
   itensDaListaDeTarefas.forEach(function (li) {
-    if ( itensDaListaDeTarefasSelecionados.length >0  ) {
+    if (itensDaListaDeTarefasSelecionados.length > 1) {
       li.classList.remove('checked')
-      botaoMarcarTodos.innerHTML="Select all"
-      
-    } else  {
+      botaoMarcarEDesmarcarTodos.innerHTML = "Select all"
+
+    } else {
       li.classList.add('checked')
-      botaoMarcarTodos.innerHTML="Deselect all"
+      botaoMarcarEDesmarcarTodos.innerHTML = "Deselect all"
     }
   })
 }
 
 
 
-botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
-
-
-
-
-
+botaoMarcarEDesmarcarTodos.addEventListener('click', marcarEDesmarcarTodasTarefas)
 
 
 function marcarTarefa(evento) {
@@ -59,17 +54,17 @@ function deletarTarefa(evento) {
 
 function cadastrarTarefa(evento) {
   evento.preventDefault();
-  
+
   if (inputTarefa.value.trim() === '') {
     // let ul = document.getElementById('todo-list-container') referencia;
     let main = document.querySelector('main') // Essa variavel esta armazenando o elemento pai.
     // let paragrafoAlert = document.createElement('p');
-    paragrafoAlert.innerHTML=  "Adicione uma Tarefa!"
-   main.insertBefore(paragrafoAlert,ul)  //Elemento inserido antes do elemento ul
-    
+    paragrafoAlert.innerHTML = "Adicione uma Tarefa!"
+    main.insertBefore(paragrafoAlert, ul)  //Elemento inserido antes do elemento ul
+
   } else {
-    paragrafoAlert.innerHTML =""
-     
+    paragrafoAlert.innerHTML = ""
+
     let itemDaLista = document.createElement('li');
     itemDaLista.innerText = inputTarefa.value;
     inputTarefa.value = '';
@@ -86,4 +81,4 @@ function cadastrarTarefa(evento) {
 
 // FORM -> SUBMIT (clicar no botao do form ou apertar o enter dentro input) -> cadastrarTarefa(evento)
 form.addEventListener('submit', cadastrarTarefa);
-  
+

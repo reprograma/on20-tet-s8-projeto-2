@@ -26,12 +26,13 @@ form input {
 }
 
 form button {
-  background-color: #0d69f6;
+  background-color: #b914da;
   border: none;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
   padding: 10px 20px;
+  border-radius: 60px
 }
 
 ul {
@@ -78,7 +79,7 @@ li button {
 @media (min-width: 600px) {
   body {
     align-items: center;
-    background-color: #f8f9fe;
+    background-color: #f39ef3;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -90,6 +91,7 @@ li button {
     box-shadow: 2px 2px 9px #989595f7;
     min-height: 400px;
     width: 400px;
+    border-radius: 60px
   }
 
   form {
@@ -101,12 +103,12 @@ li button {
   }
 
   .errotarefa {
-    height: 100px;
-    width: 500%;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgb(204, 53, 53);
+    background: rgb(122, 12, 150);
     color: white;
     display: none;
+    border-radius: 5px;
+    position: absolute;
+    height:40px;
+    width: 350px;
+    
   }
-}

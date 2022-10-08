@@ -5,8 +5,8 @@ let botaoMarcarTodos = document.getElementById('marcar-todos')
 let botaoDeDeletarTodos = document.getElementById('deletar-todos')
 let mensagemErro = document.getElementById('mensagem-erro')
 
-botaoDeDeletarTodos.addEventListener('click', deletarTodasTarefas)
 
+// deletar todos
 function deletarTodasTarefas(){
     let itensDaListaDeTarefas = document.querySelectorAll('li')
     itensDaListaDeTarefas.forEach(function (li) {
@@ -15,6 +15,9 @@ function deletarTodasTarefas(){
 }
 
 
+botaoDeDeletarTodos.addEventListener('click', deletarTodasTarefas)
+
+// marcar e desmarcar todas as tarefas
 function marcarTodasTarefas(){
     let itensDaListaDeTarefas = document.querySelectorAll('li')
     console.log(itensDaListaDeTarefas)
@@ -31,11 +34,13 @@ function marcarTodasTarefas(){
 
 botaoMarcarTodos.addEventListener('click', marcarTodasTarefas)
 
+// marcar uma tarefa
 function marcarTarefa(evento) {
    evento.target.classList.toggle('check')
    console.log(evento)
 }
 
+// deletar uma tarefa
 function deletarTarefa(evento) {
     ul.removeChild(evento.target.parentElement)
 }
@@ -45,6 +50,7 @@ function cadastarTarefa(evento) {
     evento.preventDefault()
     
     if (inputTafera.value === '') {
+        // aparecer, msg de erro
         mensagemErro.style.display = 'block'
     } else {
         mensagemErro.style.display = 'none'
@@ -57,7 +63,7 @@ function cadastarTarefa(evento) {
      
         li.addEventListener('click', marcarTarefa)
         ul.appendChild(li)
-
+        // limpar o input e focar.
         inputTafera.value = ''
         inputTafera.focus()
 

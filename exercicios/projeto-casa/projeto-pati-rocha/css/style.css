@@ -39,6 +39,7 @@ form input {
 }
 main p {
     color: #ff0000;
+    font-size: 11pt;
 }
 ul {
     list-style: none;
@@ -50,7 +51,7 @@ ul li {
     margin-top: 10px;
     padding: 3px 10px;
 }
-li.marcado {
+li.checked {
     background-color: #adff2f;
     text-decoration: line-through;
     border-radius: 10px;

@@ -29,15 +29,15 @@ function marcarEDesmarcarTodasTarefas() {
   itensDaListaDeTarefas.forEach(function (li) {
     if (itensDaListaDeTarefasSelecionados.length > 1) {
       li.classList.remove('checked')
-      botaoMarcarEDesmarcarTodos.innerHTML = "Select all"
-
-    } else {
+      botaoMarcarEDesmarcarTodos.innerHTML = "Marcar Todos"
+    }
+    
+    else {
       li.classList.add('checked')
-      botaoMarcarEDesmarcarTodos.innerHTML = "Deselect all"
+      botaoMarcarEDesmarcarTodos.innerHTML = "Desmarcar Todos"
     }
   })
 }
-
 
 
 botaoMarcarEDesmarcarTodos.addEventListener('click', marcarEDesmarcarTodasTarefas)
@@ -58,7 +58,7 @@ function cadastrarTarefa(evento) {
   if (inputTarefa.value.trim() === '') {
     // let ul = document.getElementById('todo-list-container') referencia;
     let main = document.querySelector('main') // Essa variavel esta armazenando o elemento pai.
-    // let paragrafoAlert = document.createElement('p');
+    
     paragrafoAlert.innerHTML = "Adicione uma Tarefa!"
     main.insertBefore(paragrafoAlert, ul)  //Elemento inserido antes do elemento ul
 

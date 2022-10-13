@@ -1,0 +1,156 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(./img/9a0cfa0d9111d8724d0b53a16022b4ba.jpg);
+  background-size: cover ;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Times, serif;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 30px;
+  color: rgb(88, 82, 82);
+
+}
+
+main {
+  border-radius: 0.9em;
+  background-image: url(./img/ba4fe11da3986fae9eda59e3fb7d4ac5.jpg);
+  box-sizing: border-box;
+  padding: 20px;
+  background-size: cover ;
+
+}
+
+form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+p {
+
+  margin-left: 3em;
+  font-size: 0.7em;
+  color: rgb(92, 88, 83);
+
+}
+
+form input {
+
+  border: none;
+  border-bottom: 0.1em solid rgb(139, 119, 87);
+  height: 30px;
+  width: 100%;
+}
+
+form button {
+  border-style: none;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  background-color: #d8883e;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+  
+  
+  
+
+
+li {
+  display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    background-image: url('./img/ddfeece0-51d0-4faf-9d47-9afb1e0053f0.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+  
+}
+
+
+
+li.checked {
+  
+    text-decoration: line-through;
+    background-image: url('./img/5efcc03f-ff4c-4f7e-8e0f-759748db7dda.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  background-color: #ffd1ef;
+  text-decoration: line-through;
+}
+
+
+li button {
+  background-color: transparent;
+  background-image: url(./img/5070838c-6c0c-41d7-a327-2d11043f5c0a.png);
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+#button-container button {
+  border: none;
+  cursor: pointer;
+  font-size: 18pt;
+  padding: 10px 20px;
+}
+
+#button-container button:first-child {
+  font-size: 18px;
+  color: white;
+  border-style: none;
+  border-radius: 0.3em;
+  background-color: rgba(63, 144, 168, 0.803);
+}
+
+#button-container button:last-child {
+  font-size: 18px;
+  color: #f8f9fe;
+  border-style: none;
+  border-radius: 0.3em;
+  background-color: rgba(221, 116, 181, 0.781);
+
+}
+
+@media (min-width: 400px) {
+  body {
+    align-items: center;
+    display: flex;
+    background-color: #f8f9fe;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  main {
+    background-color: white;
+    box-shadow: 2px 2px 9px #989595f7;
+    width: 400px;
+    min-height: 400px;
+    margin: 50px;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  form input {
+    width: 180px;
+
+  }
+}

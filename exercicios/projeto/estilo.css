@@ -75,6 +75,12 @@ li button {
   background-color: rgba(255, 33, 33, 0.781);
 }
 
+.erro {
+  color: red;
+  font-size: 14pt;
+  margin: 10px;
+}
+
 @media (min-width: 600px) {
   body {
     align-items: center;

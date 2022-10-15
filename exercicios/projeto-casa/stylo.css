@@ -149,12 +149,6 @@ li button {
         inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.erro {
-  color: red;
-  font-size: 14pt;
-  margin: 10px;
-}
-
 @media (min-width: 600px) {
     body {
         align-items: center;

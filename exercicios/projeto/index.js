@@ -78,6 +78,7 @@ function cadastrarTarefa(evento) {
     itemDaLista.innerText = inputTarefa.value;
     inputTarefa.value = '';
 
+
     let botaoDeletar = document.createElement('button');
     itemDaLista.appendChild(botaoDeletar);
     botaoDeletar.addEventListener('click', deletarTarefa)
@@ -90,3 +91,4 @@ function cadastrarTarefa(evento) {
 
 // FORM -> SUBMIT (clicar no botao do form ou apertar o enter dentro input) -> cadastrarTarefa(evento)
 form.addEventListener('submit', cadastrarTarefa);
+

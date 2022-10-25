@@ -1,0 +1,111 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .tile{
+    text-align: center;
+  }
+
+  main {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*espaço*/
+  }
+  
+  form input {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: rgb(164, 46, 243);
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  li.checked {
+    background-color: grey;
+    text-decoration: line-through;
+  }
+  
+  li button {
+    background-color: transparent;
+    background-image: url('./lixo.png');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+  
+  #button-container button {
+    border: none;
+    cursor: pointer;
+    font-size: 14pt;
+    padding: 10px 20px;
+  }
+  
+  #button-container button:first-child {
+    background-color: rgb(164, 46, 243);
+  }
+  
+  #button-container button:last-child {
+    background-color: rgb(164, 46, 243);
+  }
+  
+  #tarefa-erro {
+    color: rrgb(164, 46, 243);
+    font-weight: bold;
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      align-items: center;
+      background-color: #f8f9fe;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      /* vh - viewport height */
+    }
+  
+    main {
+      background-color: aliceblue;
+      box-shadow: 2px 2px 9px #746666f7;
+      min-height: 400px;
+      width: 400px;
+    }
+  
+    form {
+      flex-direction: row;
+    }
+  
+    form input {
+      width: 180px;
+    }
+  }
